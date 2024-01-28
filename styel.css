@@ -1,0 +1,70 @@
+/* Apply some global styles*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f6f6f6;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    width: auto;
+  }
+  @media only screen and (max-width: 600px) {
+    .content {
+      width: auto;
+    }
+  }
+
+  /* Style the image*/
+  .content img{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 0px 20px blue;
+    transition: 0.5s;
+  }
+  .content img:hover{
+    box-shadow: 0px 5px 20px red;
+  }
+
+  .content .links{
+    transition: 1s;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    
+  }
+  .content .links:hover{
+    transform: scale(1.1);
+    font-size: 5px;
+    border: 1px solid #f6f6f6;
+  }
+  .content .links a {
+    margin: 60px;
+    text-decoration: none;
+    font-size: large;
+    color: red;
+    transition: 1s;
+  }
+  .content .links a:hover{
+    color: blue;
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 600px){
+    .content .links a{
+        font-size: 18px;
+        margin: 15px;
+        color: blue;
+        transition: 0.5s;
+    }
+    .content .links a:hover{
+        color: red;
+        font-size: 20px;
+      }
+  }
